@@ -1,6 +1,8 @@
 ITPM Assignment 1 – Singlish to Sinhala Transliteration Testing
 Student ID: IT23668768
 
+GitHub Repository: https://github.com/ayeshsenadheera/IT23668768_project_playwright.git
+
 Project Overview:
 This project tests the accuracy of the PixelsSuite Transliteration Tool
 (https://www.pixelssuite.com/transliteration) in converting chat-style 
@@ -43,4 +45,4 @@ Test Case Details:
 - Input length types: S (30 chars or less), M (31-299 chars)
 - Covers all 24 Singlish input types
 
-GitHub Repository: https://github.com/ayeshsenadheera/IT23668768_project_playwright.git
+

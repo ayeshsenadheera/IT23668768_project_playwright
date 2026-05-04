@@ -1,0 +1,52 @@
+# ITPM Assignment 1 – Singlish to Sinhala Transliteration Testing
+## Student ID: IT23668768
+
+## Project Overview
+This project tests the accuracy of the [PixelsSuite Transliteration Tool](https://www.pixelssuite.com/transliteration) in converting chat-style Singlish input into Sinhala output. It contains 50 negative test cases where the system fails to correctly transliterate Singlish to Sinhala.
+
+## Project Structure
+```
+IT23668768/
+├── README.md
+├── IT23668768.txt
+└── test_automation/
+    └── test_automation/
+        ├── test_automation.py
+        └── IT23668768.xlsx
+```
+
+## Prerequisites
+- Python 3.11 or 3.12
+- Google Chrome browser
+
+## Installation
+Run the following commands once:
+```
+pip install playwright openpyxl
+python -m playwright install
+```
+
+## Running the Tests
+Navigate to the test_automation folder:
+```
+cd test_automation/test_automation
+```
+
+Then run:
+```
+python test_automation.py --excel "IT23668768.xlsx" --url "https://www.pixelssuite.com/transliteration" --wait-ms 8000 --type-delay-ms 100 --slow-mo-ms 300 --save-every 1 --keep-open
+```
+
+## What Happens
+1. Chrome browser opens automatically
+2. Navigates to the PixelsSuite transliteration page
+3. Types each Singlish input from the Excel file
+4. Captures the Sinhala output
+5. Compares with expected output and marks PASS/FAIL
+6. Saves results back to the Excel file
+
+## Test Case Details
+- Total test cases: 50
+- All test cases are negative (Neg_0001 to Neg_0050)
+- Input length types: S (≤30 chars), M (31–299 chars)
+- Covers all 24 Singlish input types

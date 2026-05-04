@@ -11,7 +11,7 @@ IT23668768/
 ├── IT23668768.txt
 └── test_automation/
     └── test_automation/
-        ├── test_automation.py
+        ├── IT23668768_test_automation.py
         └── IT23668768.xlsx
 ```
 
@@ -34,7 +34,7 @@ cd test_automation/test_automation
 
 Then run:
 ```
-python test_automation.py --excel "IT23668768.xlsx" --url "https://www.pixelssuite.com/transliteration" --wait-ms 8000 --type-delay-ms 100 --slow-mo-ms 300 --save-every 1 --keep-open
+python IT23668768_test_automation.py --excel "IT23668768.xlsx" --url "https://www.pixelssuite.com/transliteration" --wait-ms 8000 --type-delay-ms 100 --slow-mo-ms 300 --save-every 1 --keep-open
 ```
 
 ## What Happens
